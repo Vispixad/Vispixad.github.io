@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vispixad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto 0 auto;
+      padding: 20px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #ffffff;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ff7f50;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      opacity: 0;
+    }
+
+    .fadeInUp {
+      animation-name: fadeInUp;
+    }
+
+    .option {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .option label {
+      margin-right: 15px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      color: #ffffff;
+      flex: 0 0 auto;
+    }
+
+    .option input[type="radio"] {
+      display: none;
+    }
+
+    .option input[type="radio"]+label {
+      padding: 10px 18px;
+      border-radius: 12px;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      font-size: 16.5px;
+      border: 1px solid transparent;
+    }
+
+    .option input[type="radio"]+label:hover {
+      border-color: #1f1f1f;
+    }
+
+    .option input[type="radio"]:checked+label {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .text {
+      display: none;
+    }
+
+    .text.active {
+      display: block;
+      animation: fadeInUp 1s ease;
+    }
+
+    .side-content {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .side-content img {
+      max-width: 400px;
+      width: 100%;
+      margin-right: 20px;
+      border-radius: 10px; /* добавлено свойство для закругления */
+    }
+
+      @media (max-width: 768px) {
+      .container {
+        margin-top: 20px;
+      }
+
+      .option label {
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      .option input[type="radio"]+label {
+        padding: 10px 15px;
+        font-size: 14px;
+      }
+
+      .side-content {
+        flex-direction: column; /* Изменяем порядок элементов на мобильных устройствах */
+        text-align: center; /* Выравниваем текст по центру */
+      }
+
+      .side-content img {
+        margin-bottom: 20px; /* Добавляем отступ между кнопками и фото */
+
+
+      .side-content {
+        flex-direction: column-reverse; /* Изменяем порядок элементов на мобильных устройствах */
+        text-align: center; /* Выравниваем текст по центру */
+      }
+
+      .side-content img {
+        margin-bottom: 20px; /* Добавляем отступ между кнопками и фото */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <section class="section animated fadeInUp">
+        <div class="option">
+          <input type="radio" id="option1" name="textOption" value="option1" checked>
+          <label for="option1">Основное</label>
+          <input type="radio" id="option2" name="textOption" value="option2">
+          <label for="option2">Design</label>
+          <input type="radio" id="option3" name="textOption" value="option3">
+          <label for="option3">Program</label>
+          <input type="radio" id="option4" name="textOption" value="option4">
+          <label for="option4">Оther</label>
+        </div>
+      </section>
+      <div id="texts">
+        <div class="text active" id="text1">
+          <div class="side-content">
+            <img src="image1.jpg" alt="Image 1">
+            <p>Дополнительный текст для варианта 2</p>
+          </div>
+        </div>
+        <div class="text" id="text2">
+          <div class="side-content">
+            <img src="image2.png" alt="Image 2">
+            <p>Начало:
+              Начало пошло с изменения дизайна некой "Arkasha OS" (работа одного человека), что в последствии перешло в собственный проект который сначала назывался "Octopus OS", далее получил rename - "Sunrise OS". Мне понравилась тема дизайна (сайты, приложения, логотипы и прочее) и я начал делать не только свой проект, но и различные концепты и редизайны для обучения.
+              Что сейчас?
+              На момент написания (2024г.) я иногда все же делаю редизайны и концепты но больше занимаюсь тем что будет описано в Program.</p>
+          </div>
+        </div>
+        <div class="text" id="text3">
+          <div class="side-content">
+            <img src="image3.jpg" alt="Image 3">
+            <p>Дополнительный текст для варианта 3</p>
+          </div>
+        </div>
+        <div class="text" id="text4">
+          <div class="side-content">
+            <img src="image4.jpg" alt="Image 4">
+            <p>Дополнительный текст для варианта 4</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.querySelectorAll('input[name="textOption"]').forEach((input) => {
+      input.addEventListener('change', () => {
+        document.querySelectorAll('.text').forEach((text) => {
+          text.classList.remove('active');
+        });
+        const selectedTextId = 'text' + document.querySelector('input[name="textOption"]:checked').value.substr(-1);
+        document.getElementById(selectedTextId).classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
