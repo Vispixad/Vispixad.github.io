@@ -136,6 +136,11 @@
       border-radius: 10px;
     }
 
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
     @media (max-width: 768px) {
       .container {
         margin-top: 20px;
@@ -152,7 +157,7 @@
       }
 
       .side-content {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
       }
 
@@ -187,12 +192,6 @@
         padding: 0;
       }
     }
-
-    @media (max-width: 768px) {
-      .side-content {
-        flex-direction: column;
-      }
-    }
   </style>
 </head>
 
@@ -203,12 +202,14 @@
       </section>
       <div id="texts">
         <div class="text active" id="text1">
+          <div class="section-title">Главная</div>
           <div class="side-content">
             <img src="image1.jpg" alt="Image 1">
-            <p>Дополнительный текст для варианта 2</p>
+            <p>Дополнительный текст для варианта 1</p>
           </div>
         </div>
         <div class="text" id="text2">
+          <div class="section-title">Дизайн</div>
           <div class="side-content">
             <img src="image2.png" alt="Image 2">
             <p>Начало:
@@ -218,12 +219,14 @@
           </div>
         </div>
         <div class="text" id="text3">
+          <div class="section-title">Программы</div>
           <div class="side-content">
             <img src="image3.jpg" alt="Image 3">
             <p>Дополнительный текст для варианта 3</p>
           </div>
         </div>
         <div class="text" id="text4">
+          <div class="section-title">Другое</div>
           <div class="side-content">
             <img src="image4.jpg" alt="Image 4">
             <p>Дополнительный текст для варианта 4</p>
