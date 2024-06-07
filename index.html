@@ -211,27 +211,17 @@
       }
     }
 
+    /* New styles for the grey box with icon and text */
     .github-container {
       display: flex;
       align-items: center;
       padding: 10px;
       background-color: #151515;
       border-radius: 10px;
-      max-width: calc(100% - 20px); /* Устанавливаем максимальную ширину с учетом отступов */
-      width: auto; /* Убираем явную ширину */
+      width: 100%;
+      max-width: 330px;
     }
 
-    .github-container img {
-      max-width: 100%; /* Для изображения внутри контейнера */
-    }
-
-    /* Медиа-запрос для уменьшения ширины плашки при нехватке места */
-    @media (max-width: 400px) {
-      .github-container {
-        max-width: calc(100% - 10px); /* Уменьшаем максимальную ширину с учетом отступов */
-      }
-    }
-    
     .github-icon {
       font-size: 30px;
       margin-right: 10px;
@@ -300,7 +290,7 @@
             <div class="github-container">
               <i class="fab fa-github github-icon"></i>
               <div class="github-text">
-                <span class="github-title">Twitter</span>
+                <span class="github-title">Github</span>
                 <span class="github-description">Now I am actively leading</span>
               </div>
               <a href="https://twitter.com/your_twitter_handle" class="github-link" target="_blank">
@@ -311,7 +301,7 @@
             <div style="margin-top: 10px;" class="github-container">
               <i class="fab fa-telegram github-icon"></i>
               <div class="github-text">
-                <span class="github-title">LinkedIn</span>
+                <span class="github-title">Telegram</span>
                 <span class="github-description">I also often come and chat</span>
               </div>
               <a href="https://www.linkedin.com/in/your_profile" class="github-link" target="_blank">
@@ -322,7 +312,7 @@
             <div style="margin-top: 10px;" class="github-container">
               <i class="fab fa-discord github-icon"></i>
               <div class="github-text">
-                <span class="github-title">Website</span>
+                <span class="github-title">Discord</span>
                 <span class="github-description">I come in most rarely :(</span>
               </div>
               <a href="https://yourwebsite.com" class="github-link" target="_blank">
