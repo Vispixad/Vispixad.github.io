@@ -145,8 +145,9 @@
     }
 
     .section-title {
-      font-size: 24px;
-      margin-bottom: 10px;
+      font-size: 30px;
+      margin-bottom:40px;
+      text-align: center;
     }
 
     @media (max-width: 768px) {
@@ -160,12 +161,23 @@
       }
 
       .option input[type="radio"]+label {
-        padding: 10px 15px;
-        font-size: 14px;
+        padding: 10px 12px;
+        border-radius: 12px;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+        font-size: 16.5px;
+        border: 1px solid transparent;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none; /* Добавляем этот стиль, чтобы убрать обводку на мобильных устройствах */
       }
 
       .side-content img {
         margin-bottom: 10px;
+        max-width: 100%;
+        height: auto;
       }
 
       .bottom-bar {
@@ -194,6 +206,15 @@
         height: 40px;
         padding: 0;
       }
+
+      .section-title {
+        font-size: 24px; /* Уменьшим размер заголовка для мобильных устройств */
+        margin-bottom: 20px; /* Уменьшим отступ между заголовком и контентом */
+      }
+
+      .side-content {
+        margin-bottom: 60px; /* Добавляем нижний отступ, чтобы избежать перекрытия блюром бара */
+      }
     }
   </style>
 </head>
@@ -208,7 +229,7 @@
           <div class="section-title">Главная</div>
           <div class="side-content">
             <img src="image1.jpg" alt="Image 1">
-            <p>Дополнительный текст для варианта 1</p>
+            <p>Это сайт-биография пользователя Vispixad</p>
           </div>
         </div>
         <div class="text" id="text2">
@@ -216,9 +237,9 @@
           <div class="side-content">
             <img src="image2.png" alt="Image 2">
             <p>Начало:
-              Начало пошло с изменения дизайна некой "Arkasha OS" (работа одного человека), что в последствии перешло в собственный проект который сначала назывался "Octopus OS", далее получил rename - "Sunrise OS". Мне понравилась тема дизайна (сайты, приложения, логотипы и прочее) и я начал делать не только свой проект, но и различные концепты и редизайны для обучения.
-              Что сейчас?
-              На момент написания (2024г.) я иногда все же делаю редизайны и концепты но больше занимаюсь тем что будет описано в Program.</p>
+              Начало пошло с изменения дизайна некой "Arkasha OS" (работа одного человека), что в последствии перешло в собственный проект который сначала назывался "Octopus OS", далее получил rename - "Sunrise OS". Мне понравилась тема дизайна (сайты, приложения, логотипы и прочее) и я начал делать не только свой проект, но и различные концепты и редизайны для обучения.</p>
+            </p>Что сейчас?</p>
+            </p>На момент написания (2024г.) я иногда все же делаю редизайны и концепты но больше занимаюсь тем что будет описано в Program.</p>
           </div>
         </div>
         <div class="text" id="text3">
