@@ -211,17 +211,27 @@
       }
     }
 
-    /* New styles for the grey box with icon and text */
     .github-container {
       display: flex;
       align-items: center;
       padding: 10px;
       background-color: #151515;
       border-radius: 10px;
-      width: 100%;
-      max-width: 380px;
+      max-width: calc(100% - 20px); /* Устанавливаем максимальную ширину с учетом отступов */
+      width: auto; /* Убираем явную ширину */
     }
 
+    .github-container img {
+      max-width: 100%; /* Для изображения внутри контейнера */
+    }
+
+    /* Медиа-запрос для уменьшения ширины плашки при нехватке места */
+    @media (max-width: 380px) {
+      .github-container {
+        max-width: calc(100% - 10px); /* Уменьшаем максимальную ширину с учетом отступов */
+      }
+    }
+    
     .github-icon {
       font-size: 30px;
       margin-right: 10px;
@@ -287,7 +297,6 @@
           <div class="section-title">Другое</div>
           <div class="side-content">
             <img src="image4.jpg" alt="Image 4">
-            <p>Альтернативны ресурсы (соц сети)</p>
             <div class="github-container">
   <i class="fab fa-github github-icon"></i>
   <div class="github-text">
