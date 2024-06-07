@@ -141,7 +141,7 @@
 
     .section-title {
       font-size: 30px;
-      margin-bottom:40px;
+      margin-bottom: 40px;
       text-align: center;
     }
 
@@ -202,16 +202,56 @@
       }
 
       .section-title {
-        font-size: 24px; /* Уменьшим размер заголовка для мобильных устройств */
-        margin-bottom: 20px; /* Уменьшим отступ между заголовком и контентом */
+        font-size: 24px;
+        margin-bottom: 20px;
       }
 
       .side-content {
-        margin-bottom: 60px; /* Добавляем нижний отступ, чтобы избежать перекрытия блюром бара */
+        margin-bottom: 60px;
       }
     }
-  </style>
-</head>
+
+    /* New styles for the grey box with icon and text */
+    .github-container {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #151515;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 380px;
+    }
+
+    .github-icon {
+      font-size: 30px;
+      margin-right: 10px;
+    }
+
+    .github-text {
+      flex-grow: 1;
+    }
+
+    .github-title {
+      font-weight: bold;
+      display: block;
+    }
+
+    .github-description {
+      color: #cccccc;
+    }
+
+    .github-link {
+      color: #ffffff;
+      margin-right: 10px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .github-link:hover {
+      color: #ff7f50;
+    }
+    </style>
+    </head>
 
 <body>
   <div class="container">
@@ -247,11 +287,21 @@
           <div class="section-title">Другое</div>
           <div class="side-content">
             <img src="image4.jpg" alt="Image 4">
-            <p>Дополнительный текст для варианта 4</p>
-          </div>
-        </div>
-      </div>
-    </main>
+            <p>Альтернативны ресурсы (соц сети)</p>
+            <div class="github-container">
+  <i class="fab fa-github github-icon"></i>
+  <div class="github-text">
+    <span class="github-title">GitHub</span>
+    <span class="github-description">Описание профиля на GitHub</span>
+  </div>
+  <a href="https://github.com/Vispixad" class="github-link" target="_blank">
+    <i class="fas fa-arrow-right"></i>
+  </a>
+  </div>
+  </div>
+  </div>
+  </div>
+  </main>
   </div>
 
   <div class="bottom-bar">
